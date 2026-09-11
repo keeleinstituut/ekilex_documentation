@@ -1,8 +1,22 @@
 # Kasutusjuhtumid
 
-Ekilexi rakendusliidese kaudu on programmaatiliselt kättesaadav sama sisu, mida kuvab [Sõnaveeb](www.sonaveeb.ee). Siit leiad mõned näidise, kuidas hankida üksikasjalikke keeleandmeid Ekilexi avaliku API kaudu. 
+Ekilexi rakendusliidese kaudu on programmaatiliselt kättesaadav sama sisu, mida kuvab [Sõnaveeb](www.sonaveeb.ee). Siit leiad mõned näidise, kuidas hankida üksikasjalikke keeleandmeid Ekilexi avaliku API kaudu.
 
-### KEELENDI (SÕNA) ID-NUMBRI LEIDMINE
+## Sisukord
+
+- [1. Keelendi (sõna) id-numbri leidmine](#1-keelendi-sõna-id-numbri-leidmine)
+- [2. Definitsiooni leidmine](#2-definitsiooni-leidmine)
+- [3. Lemma leidmine](#3-lemma-leidmine)
+- [4. Näitelaused](#4-näitelaused)
+- [5. Sünonüüm/antonüüm](#5-sünonüümantonüüm)
+- [6. Paradigmad](#6-paradigmad)
+- [7. Tõlge](#7-tõlge)
+- [8. Võrdlusastmed](#8-võrdlusastmed)
+- [9. Kõik sõnastikuandmed](#9-kõik-sõnastikuandmed)
+- [10. Keeleoskuse tase sõnadel](#10-keeleoskuse-tase-sõnadel)
+- [11. Laiendatud tekstiotsing](#11-laiendatud-tekstiotsing)
+
+### 1. KEELENDI (SÕNA) ID-NUMBRI LEIDMINE
 Mitmed API-päringud eeldavad otspunkti URL-i lisatud otsitava keelendi identifikaatorit `wordId`. 
 Selle parameetri leidmiseks on kaks võimalust:  
 
@@ -69,7 +83,7 @@ Kasutades päringut `GET api/word/ids/siirup/eki/est` saab vastuseks massiivi va
 > Kui otsitaval keelendil on homonüüme ehk leidub sama väliskujuga keelendeid (*word*), mis on täiesti eri tähendusega (*meaning*), nagu näiteks "keel",  või kui sama kirjaviisiga esineb vasteid
 > teises keeles (nt "lamp", "park"), siis igaühel neist on oma unikaalne järjenumber `wordId`.
 
-### 1. DEFINITSIOONI LEIDMINE
+### 2. DEFINITSIOONI LEIDMINE
 Tean ühte sõna ja tahan teada selle tähenduste seletusi.
 
 **Näide:**  
@@ -148,7 +162,7 @@ Vastuseks saad iga ilmiku jaoks ühe tähenduse ning selle seletused.
 ```
 </details>  
 
-### 2. LEMMA LEIDMINE
+### 3. LEMMA LEIDMINE
 **Probleem:**  
 Tean ühte sõna, aga see ei ole algvormis. Soovin leida algvormi.  
 
@@ -177,7 +191,7 @@ JSON-ist leia `$[*].wordValue`
 ```
 </details>  
 
-### 3. NÄITELAUSED
+### 4. NÄITELAUSED
 **Probleem:**  
 Soovin leida, millistes lausetes otsitavat sõna kasutatakse.
 
@@ -365,7 +379,7 @@ Vastusest saab iga ilmiku jaoks näitelaused, milles see keelend esineb. Lisaks 
 ```
  </details> 
 
-### 4. SÜNONÜÜM/ANTONÜÜM
+### 5. SÜNONÜÜM/ANTONÜÜM
 **Probleem:**  
 Tean ühte sõna ja tahan selle sünonüüme või antonüüme teada.
 
@@ -589,7 +603,7 @@ Lisaks võivad kasulikuks osutuda ka osasünonüümid ehk sarnased sõnad, mis o
 ```
  </details> 
 
-### 5. PARADIGMAD
+### 6. PARADIGMAD
 
 **Probleem:**  
 Tahan teada, kuidas mingit sõna käänata või pöörata.
@@ -765,7 +779,7 @@ Alternatiivina saab päringust `GET api/paradigm/details/173981` kätte ainult p
 ```
  </details> 
 
-### 6. TÕLGE
+### 7. TÕLGE
 **Probleem:**  
 Mul on üks sõna ja tahan näha selle tõlget.
 
@@ -833,7 +847,7 @@ json-i rajalt `$.results[*].meaningWords[*].wordValue` ning selle keel on märgi
    ```
 </details>
 
-### 7. VÕRDLUSASTMED 
+### 8. VÕRDLUSASTMED 
 
 **Probleem:**  
 Tahan teada, millised on sõna algvõrre, keskvõrre ja ülivõrre.   
@@ -935,7 +949,7 @@ Leida sõna "roheline" võrdlusastmed. Päringu `GET api/word/details/228454` va
 ```
  </details> 
 
-### 8. KÕIK SÕNASTIKUANDMED
+### 9. KÕIK SÕNASTIKUANDMED
 **Probleem:**  
 Tahan nimekirja kõikidest sõnadest, mis ühes sõnakogus leiduvad.
 
@@ -999,7 +1013,7 @@ Vastusena päringule `GET api/public_word/juuksed` esitatakse nimekiri sõnakogu
 </details>  
 
 
-### 9. KEELEOSKUSE TASE SÕNADEL
+### 10. KEELEOSKUSE TASE SÕNADEL
 
 **Probleem:**  
 Tahan teada, millisele keeleoskuse tasemele mingi sõna vastab.
@@ -1056,7 +1070,7 @@ Päringu `GET api/word/details/242491` vastusest leiad iga ilmiku jaoks selle ke
 ```
 </details>
 
-### LAIENDATUD TEKSTIOTSING
+### 11. LAIENDATUD TEKSTIOTSING
 
 Järgmistes API-otspunktides saad otsingut laiendada, kasutades `{word}` parameetris metamärke.
 * `api/word/search/{word}`  
