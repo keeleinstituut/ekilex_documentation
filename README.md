@@ -1,0 +1,2 @@
+# ekilex_documentation
+Ekilex tarkvaraprojekti dokumentatsioon
