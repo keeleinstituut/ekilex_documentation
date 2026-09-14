@@ -33,7 +33,7 @@ See repositoorium sisaldab Ekilexi dokumentatsiooni.
       C --> F
       D --> WW
       D -->|A2-B1 sõnavara| I
-      D -->|ametlik keelekasutus| J
+      D -->|raamat| J
       E --> WW
       F --> WW
 
