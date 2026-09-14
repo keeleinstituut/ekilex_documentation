@@ -1,6 +1,6 @@
 # Lähtekoodis kasutatud terminid
 
-| nimetus koodis | eesti termin | seletus |
+| inglise keel | eesti keel | seletus |
 |---|---|---|
 | collocation | kollokatsioon / naabersõna | tavalisest sagedamini koos esinevatest sõnadest moodustuv ühend (nt *kange kohv*, mitte **tugev kohv*) |
 | concept | mõiste | tähendus terminibaasi vaates |
