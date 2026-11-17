@@ -25,7 +25,7 @@
 | register | register | keele kiht või allkeel, millele on iseloomulik teatav sõnavara, süntaks, hääldus vms vastavalt keelekasutuse olukorrale, suhtluseesmärgile (nt ametlik keel, släng) |
 | source | allikas | allikas (raamat, artikkel, isik vm) |
 | usage | kasutusnäide | näitelause, milles keelend esineb (leksikograafide vaates; terminoloogide vaates vt *context*) |
-| value state | väärtusolek | iseloomustab termini sobivust vaadeldava mõiste jaoks (nt *eelistatud*, *väldi*|
+| value state | väärtusolek | iseloomustab termini sobivust vaadeldava mõiste jaoks (nt *eelistatud*, *väldi*)|
 | variant | variant | keelendi alternatiivne esituviis (*maaalune* ~ *maa-alune*)|
 | word | keelend | iseseisva tähendusega keeleüksus (nt sõna, sõnaühend) |
 | word relation | keelendi seos | seos kahe keelendi vahel (nt tuletis, võrdevormid) |
