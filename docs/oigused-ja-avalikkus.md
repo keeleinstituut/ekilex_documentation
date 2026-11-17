@@ -16,7 +16,7 @@
 ## Sisukord
 
 - [Mõisted](#mõisted)
-- [Ligipääs ja õigused Ekilexis](#ligipääs-ja-õigused)
+- [Ligipääs ja õigused Ekilexis](#ligipääs-ja-õigused-ekilexis)
 - [Avaldamine Sõnaveebis](#avaldamine-sõnaveebis)
 - [REST API](#rest-api)
 - [KKK](#kkk)
